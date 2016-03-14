@@ -50,7 +50,9 @@ static void irq_handler(void)
 static void init_apic(void)
 {
 	unsigned long apic_freq_khz;
-
+	
+	printk("Hello world!! R03922077 HW2 \n");
+	
 	int_init();
 	int_set_handler(APIC_TIMER_VECTOR, irq_handler);
 
